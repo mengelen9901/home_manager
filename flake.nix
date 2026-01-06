@@ -35,19 +35,20 @@
     in
     {
       homeConfigurations = {
-        "hpeters@Mac" = home-manager.lib.homeManagerConfiguration {
+        "mengelen@MKT7KGMK22" = home-manager.lib.homeManagerConfiguration {
           pkgs = m1pkgs;
           modules = [
             ./zsh/default.nix
             ./nvim/default.nix
+            ./wezterm/default.nix
             {
               home.packages = [
                 m1pkgs.home-manager
                 m1pkgs.bottom
                 m1pkgs.nerd-fonts.jetbrains-mono
               ];
-              home.username = "hpeters";
-              home.homeDirectory = "/Users/hpeters";
+              home.username = "mengelen";
+              home.homeDirectory = "/Users/mengelen";
               home.sessionVariables = {
                 EDITOR = "nvim";
                 SHELL = "/bin/zsh";

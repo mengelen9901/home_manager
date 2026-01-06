@@ -156,6 +156,13 @@
       vim.keymap.set('n', '<C-k>', '<C-w>k', {noremap=false})
       vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap=true})
 
+      -- does not work not sure why
+      vim.keymap.set('n', '<C-Left>',  '<C-w>h', {noremap=true})
+      vim.keymap.set('n', '<C-Down>',  '<C-w>j', {noremap=true})
+      vim.keymap.set('n', '<C-Up>',    '<C-w>k', {noremap=false})
+      vim.keymap.set('n', '<C-Right>', '<C-w>l', {noremap=true})
+
+
       -- ----------------------
       -- Tab navigation
       -- ----------------------
@@ -600,8 +607,7 @@
 
       vim.lsp.config("jdtls", {
         capabilities = capabilities,
-        -- cmd = { "jdtls", "--java-executable", "/Users/hpeters/repos/maxelerTesting/maxj-javac" },
-        cmd = { "/Users/hpeters/repos/eclipse.platform.releng.aggregator/jdtls.sh" },
+        cmd = { "/Users/mengelen/Documents/maxj/eclipse.platform.releng.aggregator/jdtls.sh" },
       });
       vim.lsp.enable("jdtls")
 
