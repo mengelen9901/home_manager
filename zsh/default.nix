@@ -33,7 +33,7 @@
       # Ensure vim and vi are aliased to nvim for all terminals
       alias vim='nvim'
       alias vi='nvim'
-      alias e='nvim'
+      alias e='cursor'
     '';
 
     initContent = ''
