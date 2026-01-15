@@ -41,6 +41,7 @@
             ./zsh/default.nix
             ./nvim/default.nix
             ./wezterm/default.nix
+            ./tmux/default.nix
             ./colossus/default.nix
             {
               programs.colossus.enable = true;
