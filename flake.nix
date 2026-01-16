@@ -50,6 +50,7 @@
                 m1pkgs.home-manager
                 m1pkgs.bottom
                 m1pkgs.nerd-fonts.jetbrains-mono
+                m1pkgs.google-cloud-sdk
               ];
               home.username = "mengelen";
               home.homeDirectory = "/Users/mengelen";
